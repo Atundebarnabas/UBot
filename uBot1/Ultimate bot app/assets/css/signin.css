@@ -1,0 +1,679 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    /* background-color: #55c225; */
+    /* overflow: hidden; */
+}
+
+body::-webkit-scrollbar {
+    background-color: red;
+    width: 30%;
+    display: none;
+    font-family: 'poppins', sans-serif;
+}
+
+:root {
+    /* background-color: #7ee8fa; */
+    --bgtext: background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+}
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid transparent;
+  -webkit-text-fill-color: inherit;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.container {
+    background: linear-gradient(rgba(255, 255, 255), rgba(239 239 239));
+    backdrop-filter: blur(30px);
+    height: -webkit-fill-available;
+    width: 100%;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+    background-color: red;
+}
+
+.container .head  {
+    height: auto;
+    width: 100%;
+    /* padding: 20px; */
+    /* background: red; */
+    display: flex;
+}
+
+.container .head .right {
+    width: 80%;
+    height: auto;
+    /* background: yellow; */
+    display: flex;
+}
+
+.container .head .right .text_logo {
+    height: 100%;
+    width: calc(100% - 90px);
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.container .head .right .text_logo p {
+    background: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: poppins;
+    font-size: 7vw;
+    font-weight: 900;
+}
+
+.container .head .right .logo {
+    height: 90px;
+    width: 90px;
+    /* background: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .head .right .logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.container .head .right .logo .div {
+        /* background: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%); */
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+}
+
+.container .head .left {
+    width: 20%;
+    height: auto;
+    /* background: green; */
+}
+
+.container .second_sec {
+    height: calc(100% - 12.3%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background: red; */
+    /* overflow: hidden; */
+}
+
+
+
+/* body */
+.container .body {
+    height: auto;
+    /* background-color: red; */
+}
+
+.pre_form_text {
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+}
+
+.pre_form_text .line{
+    height: 24px;
+    background: rgba(239 239 239);
+    border-radius: 30px;
+}
+
+.pre_form_text .shimmer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(170deg, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 80%);
+    animation: shimmereffectanime 2s infinite linear;
+}
+
+@keyframes shimmereffectanime {
+    0% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(200%);
+    }
+}
+
+.pre_form_text .line:nth-child(1) {
+    width: 90%;
+}
+
+.pre_form_text .line:nth-child(2) {
+    width: 76%;
+}
+
+.pre_form_text .line:nth-child(3) {
+    width: 62%;
+}
+
+.container .body .form_place {
+    height: auto;
+    width: 100%;
+    /* background-color: red; */
+    padding: 13px;
+    animation: passwordanime 1.2s;
+}
+
+.form_place .up {
+    height: 70%;
+    width: 100%;
+    /* background: blue; */
+}
+
+.form_place .up form {
+    height: auto;
+    width: 100%;
+    /* background: red; */
+}
+
+.form_place .up .input_box {
+    height: 85px;
+    width: auto;
+    position: relative;
+    border-radius: 20px;
+    /* background: rosybrown; */
+    margin-bottom: 20px;
+}
+
+.form_place .up .input_box input {
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    border: 4px solid rgba(239 239 239);
+    outline: none;
+    padding: 15px 23px 15px 86px;
+    font-size: 3.4vw;
+    font-weight: 600;
+    font-family: poppins;
+    background-color: white;
+    color: lightgray;
+    transition: border 1.2s ease-in-out;
+}
+
+.form_place .up .input_box input:focus {
+    padding: 25px 23px 15px 80px;
+    font-size: 3.7vw;
+    border: 2px solid #80ff72;
+    transition: border 1.2s ease-in-out;
+    color: #80ff72;
+}
+
+.form_place .up .input_box input:focus + .input_name {
+    transform: translateY(-20px);
+    transition: 0.4s ease-in;
+    font-size: 3.0vw;
+    position: absolute;
+    background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.form_place .up .input_box input:focus + .customer_dp .img_container .svg svg {
+    stroke:#80ff72;
+}
+
+.form_place .up .input_box .input_name {
+    position: absolute;
+    top: 0;
+    width: 80%;
+    float: right;
+    right: 0;
+    height: 100%;
+    /* background: red; */
+    z-index: 9;
+    font-size: 3.3vw;
+    font-family: poppins;
+    font-weight: 800;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    pointer-events: none;
+    color: lightgray;
+    margin-bottom: 10px;
+    transform: translateY(0px);
+    transition: 0.4s ease-out;
+}
+
+/* Spantransform */
+
+.form_place .up .spantransform input {
+    padding: 25px 23px 15px 66px;
+    font-size: 3.7vw;
+    transition: border 1.2s ease-in-out;
+    /* color: #80ff72; */
+}
+
+.form_place .up .spantransform input:focus {
+    padding: 25px 23px 15px 80px;
+}
+
+.form_place .up .spantransform input + .input_name {
+    transform: translateY(-20px);
+    transition: 0.4s ease-in;
+    font-size: 3.0vw;
+    position: absolute;
+    background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+.form_place .up .input_box .customer_dp {
+    height: 100%;
+    width: 20%;
+    /* background: red; */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    top: 0;
+}
+
+.customer_dp .img_container {
+    height: 50px;
+    width: 50px;
+    background: rgba(239 239 239);
+    border-radius: 50%;
+}
+
+.customer_dp .img_container .svg {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.customer_dp .img_container .svg svg {
+    height: 70%;
+    width: 70%;
+    stroke: #ddd;
+    stroke-width: 2.3;
+}
+
+.customer_dp .img_container .img_customerdp {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+    padding: 1px;
+}
+
+.img_customerdp img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background-color: white;
+    padding: 2px;
+}
+
+.form_place .down {
+    height: auto;
+    width: 100%;
+    /* background: green; */
+    transition: 0.4s ease-in-out;
+}
+
+.form_place .down .content {
+    height: 100%;
+    width: 100%;
+}
+
+.form_place .down .content .login_error_message {
+    /* background: red; */
+    padding: 0px 20px;
+    width: 100%;
+    display: none; /*flex*/
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.login_error_message p {
+    /* background: blue; */
+    font-size: 3.3vw;
+    font-family: 'poppins';
+    color: lightgray;
+}
+
+.login_error_message p span {
+    font-weight: 800;
+    background: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-overflow: ellipsis;
+    width: 42%;
+    /* display: inline-block; */
+    overflow: hidden;
+    /* position: absolute; */
+    margin-left: 5px;
+}
+
+.form_place .down .content .login_btn {
+    height: 61px;
+    width: 100%;
+    background: rgba(229 229 229);
+    padding: 20px;
+    min-height: 31%;
+    max-height: 55%;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.form_place .down .content .login_btn.active {
+    background: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+}
+
+.login_btn button {
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.4vw;
+    font-family: 'poppins';
+    font-weight: 700;
+    color: lightgray;
+    background: transparent;
+}
+
+.login_btn button.active {
+    color: white;
+}
+
+.form_place .down .content .forgot_password {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    /* background: #111; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forgot_password p {
+    box-shadow: 0px 2px 20px rgba(0 0 0 / 5%);
+    font-family: poppins;
+    font-size: 3.4vw;
+    font-weight: 700;
+    width: auto;
+    height: auto;
+    padding: 9px;
+    background: white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+.forgot_password p span {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(239 239 239);
+    border-radius: 50%;
+}
+
+.forgot_password p span svg {
+    width: 70%;
+    height: 70%;
+}
+
+.forgot_password p a {
+    background: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Footer */
+.container .footer {
+    height: auto;
+    width: 100%;
+    /* background-color: brown; */
+    padding: 20px;
+    /* position: absolute; */
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    animation: passwordanime 2.6s linear;
+}
+
+.container .footer .up_side {
+    /* background: green; */
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.container .footer .up_side .left_side {
+    height: auto;
+    width: 50%;
+    /* background: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .footer .up_side .left_side .create_account_btn {
+    height: 50px;
+    width: auto;
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.create_account_btn button {
+    height: 100%;
+    width: auto;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: 'poppins';
+    font-size: 4.3vw;
+    font-weight: 800;
+    /* border-bottom: 1px solid rgb(229 229 229); */
+}
+
+.create_account_btn button p {
+    background: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.container .footer .up_side .right_side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: red; */
+    height: auto;
+    width: 50%;
+}
+
+.container .footer .up_side .right_side .multi_language {
+    height: 50px;
+    width: 90%;
+    background: rgba(229, 229, 229);
+    border-radius: 22px;
+}
+
+.multi_language button {
+    height: 100%;
+    width: 100%;
+    border: 2px solid white;
+    border-radius: inherit;
+    outline: none;
+    display: flex;
+}
+
+.multi_language button .svg {
+    height: 100%;
+    /* background: wheat; */
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.multi_language button .svg svg {
+    height: 70%;
+    width: 70%;
+    stroke: lightgrey;
+    stroke-width: 2;
+}
+
+.multi_language button .title {
+    height: 100%;
+    width: 65%;
+    /* background: red; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.multi_language button .title p {
+    font-size: 3.4vw;
+    font-family: 'poppins';
+    font-weight: 900;
+    color: lightgrey;
+}
+
+.container .footer .down_side {
+    height: auto;
+    width: 100%;
+    /* background: red; */
+    display: flex;
+    padding: 21px;
+}
+
+.container .footer .down_side .left {
+    width: 50%;
+    height: auto;
+    /* background: green; */
+}
+
+.container .footer .down_side .left ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.container .footer .down_side .left ul li {
+    font-size: 3.4vw;
+    font-family: 'poppins';
+    list-style: none;
+    color: lightgray;
+}
+
+.container .footer .down_side .right {
+    width: 50%;
+    height: auto;
+    /* background: skyblue; */
+}
+
+.container .footer .down_side .right ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.container .footer .down_side .right ul li {
+    font-size: 3.4vw;
+    font-family: 'poppins';
+    list-style: none;
+    color: lightgray;
+}
+
+.passwordanime {
+    animation: passwordanime 1.2s linear;
+    transition: 1.2 ease-out;
+}
+
+@keyframes passwordanime {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    60% {
+        transform: translateY(20px);
+        opacity: 0.4;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+
+/*Media queries for device below max-width: 320px*/
+@media (width <= 320px) {
+    .form_place .up .input_box {
+        height: 68px;
+    }
+    .customer_dp .img_container {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+
+/*Media queries for device below max-width: 360px*/
+@media (width <= 360px) {
+    .form_place .up .input_box input:focus {
+        padding: 25px 23px 15px 68px;
+    }
+    .form_place .up .spantransform input:focus {
+        padding: 25px 23px 15px 68px;
+    }
+}

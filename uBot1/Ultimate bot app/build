@@ -1,0 +1,48 @@
+id
+user-id
+Databse flow
+Fullname
+Displayname
+email
+password
+account-pin
+referal-code
+referal-link
+verification
+avatar
+date_registered
+
+
+member 1 send 808080 to member 45
+*referal table* -- Table name
+referal_id 1
+referrer  1
+Referee 43
+date_accountrefered
+Referee -- The person that was refered by a person(Referrer)
+Referrer -- The person that refered a person(Referee)
+
+Hide referal input box of SIGNUP -- Value of referal box should be referal code gotten from referal link exhibitA -- Https://www.ultimateBot.com/signup?referalcode=808080&memberid=09093494749394739
+
+** Auth -- flow (Signup) **
+SIGNUP FIRSTPAGE ->
+Fullname
+Displayname
+email address
+password
+
+SIGNUP SECONDPAGE ->
+Mobile number --  can skip this
+
+SIGNUP THIRDPAGE ->
+Set up pin
+
+/*Form security*/
+  function proc_input($input) {
+    $input = trim($input);
+    $input = stripslashes($input);
+    $input = htmlspecialchars($input);
+    return $input;
+  }
+
+  <?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>

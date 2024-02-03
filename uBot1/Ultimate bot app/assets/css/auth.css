@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right top, rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url("../buildimg/bg1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    overflow: hidden;
+}
+
+.auth-container {
+      width: 100%;
+      height: 100%;
+      /* background-color: orangered; */
+      display: none;
+      flex-direction: column;
+}
+.auth-container .auth-up {
+      height: 60%;
+      /* background-color: aqua; */
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 20px 0px 0px 0px;
+}
+
+.auth-up .name {
+      /* background-color: green; */
+      height: auto;
+      padding: 20px 30px;
+      width: 100%;
+}
+
+.auth-up .name p {
+      color: white;
+      font-size: 9.8vw;
+      font-weight: 700;
+      animation: name 0.8s ease-in-out forwards;
+      user-select: none;
+      pointer-events: none;
+      font-family: Poppins;
+}
+
+
+@keyframes name{
+      0%{
+            opacity: 0;
+            transform: translateY(30px);
+      }
+      30%{
+            opacity: 0.3;
+      }
+      60%{
+            opacity: 0.6;
+      }
+      90%{
+            opacity: 0.9;
+      }
+      100%{
+            opacity: 1;
+            transform: translateY(0px);
+      }
+}
+
+.auth-up .slogan {
+      /* background-color: red; */
+      height: auto;
+      padding: 20px 30px;
+      width: 100%;
+}
+
+.auth-up .slogan p { 
+      font-size: 7vw;
+      animation: slogan 1.8s ease-in;
+      font-family: poppins;
+      color: white;
+}
+
+@keyframes slogan{
+      0%,10%{
+            opacity: 0;
+            transform: translateY(40px);
+      }
+      20%,40%{
+            opacity: 0;
+      }
+      60%{
+            opacity: 0.2;
+      }
+      100%{
+            opacity: 1;
+            transform: translateY(0px);
+      }
+}
+
+.auth-container .auth-down{
+      /* background-color: aqua; */
+      height: 40%;
+      width: 100%;
+      /* display: flex; */
+      justify-content: center;
+      align-items: center;
+      position: relative;
+}
+
+
+.auth-down .AD-button {
+      min-height: 22%;
+      height: auto;
+      width: 80%;
+      background-color: #fff;
+      border-radius: 40px;
+      border: none;
+      outline: none;
+      max-height: 60%;
+      padding: 20px;
+      position: absolute;
+      bottom: 40%;
+      left: 9.5%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: btnzoomin 2.4s ease-in;
+}
+
+.auth-down .AD-button button {
+      height: 100%;
+      width: 100%;
+      border-radius: inherit;
+      border: inherit;
+      outline: inherit;
+      background-color: white;
+      color: #292D32;
+      font-size: 1.3rem;
+      font-weight: 800;
+}
+
+
+@keyframes btnzoomin {
+      0%, 10%{
+            opacity: 0;
+            transform: scale(0.7);
+      }
+      20%, 40% {
+            opacity: 0;
+      }
+      60% {
+            opacity: 0;
+      }
+      100% {
+            opacity: 1;
+            transform: scale(1.0);
+      }
+}
+
+
+/*hide container -- removes when splashscreen is loaded completeley*/
+.show_container {
+      display: flex;
+}
+
+
+
+

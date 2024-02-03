@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      user-select: none;
+}
+:root{
+      --primary-font: Poppins;
+      --main-font-color: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+}
+.form-container{
+      background-color: #fff;
+      width: 100%;
+      height: 100vh;
+      font-family: var(--primary-font);
+}
+.form-container-head{
+      width: 100%;
+      height: 10vh;
+      /* background-color: aquamarine; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}
+.form-container-head p{
+      background: var(--main-font-color);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 900;
+      font-size: 2rem;
+}
+.form-container-head span{
+      font-size: .95rem;
+}
+.form{
+      /* background-color: coral; */
+      width: 100%;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}
+.form form{
+      /* background-color: yellow; */
+      width: 80%;
+      height: 60vh;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+}
+.form form input{
+      border-radius: 15px;
+      border: none;
+      outline: none;
+      padding: 25px;
+      width: 100%;
+      background-color: #eee;
+      font-family: var(--primary-font);
+      font-size: 1.2rem;
+}
+.form-bottom{
+      /* background-color: teal; */
+      width: 100%;
+      height: 30vh;
+      font-size: .9rem;
+}
+.tc-check{
+      width: 100%;
+      height: 10vh;
+      display: flex;
+      align-items: center;
+      font-size: 1.1rem;
+      /* background-color: #80ff72; */
+}
+.tc-check-box{
+      /* background-color: violet; */
+      padding: 12px;
+}
+.tc-check-box input{
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+}
+.form-button{
+      width: 100%;
+      /* background-color: aqua; */
+      display: flex;
+      justify-content: center;
+      padding: 12px;
+}
+.form-button input{
+      padding: 12px;
+      border-radius: 15px;
+      border: none;
+      font-size: 1.2rem;
+      cursor: pointer;
+}
